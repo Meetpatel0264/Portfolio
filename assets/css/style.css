@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     color: #FFFFFF;
     font-family: 'REM';}
@@ -42,6 +49,8 @@
     border-radius: 100px;
     border: none;
     margin: 5px;
+    -webkit-transition: all 0.3s linear !important;
+    -o-transition: all 0.3s linear !important;
     transition: all 0.3s linear !important;
     border: 2px solid var(--border-hover-light);
     color: var(--border-hover-light);
@@ -51,6 +60,8 @@
 
 .header-btn:hover {
     color: var(--color-light-white);
+    -webkit-transition: all 0.3s linear !important;
+    -o-transition: all 0.3s linear !important;
     transition: all 0.3s linear !important;
     background-color: var(--border-hover-light);
 }
@@ -63,6 +74,8 @@
 .header-li::after {
     content: '';
     position: absolute;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     width: 0%;
     height: 2px;
@@ -79,6 +92,8 @@
 .header-all::after {
     content: '';
     position: absolute;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     width: 0%;
     height: 2px;
@@ -110,7 +125,8 @@ header{
 /************************ Hero Section-1 Start ************************/
 
 .drop-shadow-hover:hover{
-    box-shadow: 5px 5px 10px var(--border-hover-light);
+    -webkit-box-shadow: 5px 5px 10px var(--border-hover-light);
+            box-shadow: 5px 5px 10px var(--border-hover-light);
 }
 
 .hero-sub-title {
@@ -157,6 +173,8 @@ header{
     padding: 15px 30px;
     background-color: transparent;
     border: 2px solid var(--border-hover-light);
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 
@@ -167,13 +185,19 @@ header{
 }
 
 .hero-btn i {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     color: var(--border-hover-light);
     margin-left: 5px;
 }
 
 .profile-img img {
-    transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+        -ms-transform: rotate(4deg);
+            transform: rotate(4deg);
+    -webkit-transition: 0.3s all linear;
+    -o-transition: 0.3s all linear;
     transition: 0.3s all linear;
     border: 2px solid var(--border-light);
     border-radius: 38px;
@@ -181,11 +205,15 @@ header{
 
 .profile-img :hover {
     border: 2px solid var(--border-hover-light);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
 }
 
 .hero-btn:hover .ri-download-2-line {
     color: var(--white);
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
 }
 
@@ -204,6 +232,8 @@ header{
     text-align: center;
     border-radius: 50%;
     color: var(--border-hover-light);
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 
@@ -220,24 +250,34 @@ header{
 
 .hover-box:hover {
     background-color: var(--border-hover-light);
+    -webkit-transition: all .7s linear;
+    -o-transition: all .7s linear;
     transition: all .7s linear;
 }
 
 .hover-box:hover h3 {
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
     transition: all .3s linear;
     color: var(--color-light-white);
 }
 
 .hover-box:hover .service-text-icon {
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
     transition: all .3s linear;
     color: var(--color-light-white);
 }
 
 .hover-box:hover .transform-rotate {
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 }
 
 .transform-rotate {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 
@@ -251,9 +291,12 @@ header{
 
 .service-heading {
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     font-size: 45px;
     margin-bottom: 15px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #8750f7), to(#fff));
+    background-image: -o-linear-gradient(left, #8750f7 0, #fff);
     background-image: linear-gradient(90deg, #8750f7 0, #fff);
 }
 
@@ -283,7 +326,8 @@ header{
 /************************ About Me Start ************************/
 
 .drop-shadow{
-    filter: drop-shadow(10px 5px 10px var(--border-hover-light));
+    -webkit-filter: drop-shadow(10px 5px 10px var(--border-hover-light));
+            filter: drop-shadow(10px 5px 10px var(--border-hover-light));
 }
 
 .xp-counter .styled-text {
@@ -307,9 +351,12 @@ header{
 
 .about-name{
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     font-size: 45px;
     margin-bottom: 15px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #8750f7), to(#fff));
+    background-image: -o-linear-gradient(left, #8750f7 0, #fff);
     background-image: linear-gradient(90deg, #8750f7 0, #fff);
 }
 
@@ -341,15 +388,20 @@ header{
 
 .work-title {
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     font-size: 45px;
     margin-bottom: 15px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #8750f7), to(#fff));
+    background-image: -o-linear-gradient(left, #8750f7 0, #fff);
     background-image: linear-gradient(90deg, #8750f7 0, #fff);
 }
 
 .work-main-box {
     background-color: var(--bg-light-purple);
     padding: 40px;
+    -webkit-transition: all 0.3s linear !important;
+    -o-transition: all 0.3s linear !important;
     transition: all 0.3s linear !important;
 }
 
@@ -360,6 +412,8 @@ header{
     padding: 10px;
     visibility: hidden;
     opacity: 0;
+    -webkit-transition: all 0.3s linear !important;
+    -o-transition: all 0.3s linear !important;
     transition: all 0.3s linear !important;
     text-decoration: none;
     bottom: 0;
@@ -387,13 +441,18 @@ header{
 /************************ Experience & Education Section-4 Start ************************/
 .Experience-title {
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     font-size: 45px;
     margin-bottom: 15px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #8750f7), to(#fff));
+    background-image: -o-linear-gradient(left, #8750f7 0, #fff);
     background-image: linear-gradient(90deg, #8750f7 0, #fff);
 }
 
 .bottom-box {
+    -webkit-transition: .3s all linear !important;
+    -o-transition: .3s all linear !important;
     transition: .3s all linear !important;
     background-color: var(--bg-light-purple);
     border-radius: 25px;
@@ -453,9 +512,12 @@ header{
 
 .skill-title {
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     font-size: 45px;
     margin-bottom: 15px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #8750f7), to(#fff));
+    background-image: -o-linear-gradient(left, #8750f7 0, #fff);
     background-image: linear-gradient(90deg, #8750f7 0, #fff);
 }
 
@@ -474,23 +536,32 @@ header{
     border-radius: 25px;
     margin-bottom: 20px;
     border: 1px solid transparent;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
 .skill-box-img:hover img {
-    filter: grayscale(0%);
-    transform: scale(1.1);
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .skill-box-img:hover {
     border: 1px solid var(--border-hover-light);
     background-color: var(--border-light);
-    filter: grayscale(0%);
-    transform: scale(1.1);
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .skill-box-img img {
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
 }
 
 .skill-content {
@@ -506,9 +577,15 @@ header{
     text-align: center;
     font-size: 18px;
     background-color: var(--bg-light-purple) !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 20px;
     border-radius: 20px;
 }
@@ -523,14 +600,18 @@ header{
 
 .swiper-slide img {
     display: block;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .testimonial-title {
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     font-size: 45px;
     margin-bottom: 15px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #8750f7), to(#fff));
+    background-image: -o-linear-gradient(left, #8750f7 0, #fff);
     background-image: linear-gradient(90deg, #8750f7 0, #fff);
 }
 
@@ -556,6 +637,8 @@ header{
 }
 
 .blog img {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     cursor: pointer;
     height: 300px !important;
@@ -567,7 +650,11 @@ header{
 
 
 .blog-box-head {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #8750f7), color-stop(100%, #2a1454), to(#8750f7));
+    background-image: -o-linear-gradient(left, #8750f7 0, #2a1454 100%, #8750f7);
     background-image: linear-gradient(90deg, #8750f7 0, #2a1454 100%, #8750f7);
+    -webkit-transition: all 0.3s linear !important;
+    -o-transition: all 0.3s linear !important;
     transition: all 0.3s linear !important;
     text-transform: uppercase;
     padding: 5px 10px;
@@ -580,6 +667,8 @@ header{
 
 .blog-box-title {
     background-color: var(--border-light);
+    -webkit-transition: all 0.3s linear !important;
+    -o-transition: all 0.3s linear !important;
     transition: all 0.3s linear !important;
     padding: 5px 10px;
     z-index: 5;
@@ -626,6 +715,8 @@ header{
 }
 
 .hover-white {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 
@@ -646,9 +737,12 @@ header{
 
 .form-heading {
     color: transparent;
-    background-clip: text;
+    -webkit-background-clip: text;
+            background-clip: text;
     font-size: 45px;
     margin-bottom: 15px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #8750f7), to(#fff));
+    background-image: -o-linear-gradient(left, #8750f7 0, #fff);
     background-image: linear-gradient(90deg, #8750f7 0, #fff);
 }
 
@@ -670,6 +764,8 @@ header{
     border: 2px solid var(--border-hover-light);
     color: var(--border-hover-light);
     margin: 5px;
+    -webkit-transition: all 0.3s linear !important;
+    -o-transition: all 0.3s linear !important;
     transition: all 0.3s linear !important;
     opacity: 1;
     /* transition-duration: 0.3s !important; */
@@ -709,6 +805,8 @@ header{
 .copyright span {
     color: #FFFFFF;
     font-size: 16px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 
@@ -720,6 +818,8 @@ header{
 .ri-arrow-up-line {
     font-size: 35px;
     color: var(--color-white);
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     border: 2px solid var(--border-hover-light);
     border-radius: 50%;
@@ -793,6 +893,8 @@ html {
 }
 
 .header-li-offcanva a {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 
@@ -837,6 +939,8 @@ html {
     gap: .25rem;
     padding: 15px;
     background-color: transparent;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 
 }
@@ -855,6 +959,8 @@ textarea {
 .get-my-touch button {
     background-color: transparent;
     border: 2px solid var(--border-hover-light);
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 
