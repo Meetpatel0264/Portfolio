@@ -38,4 +38,3 @@ let yourtext = [
       }
     }
   }, wait);
-  
