@@ -102,18 +102,11 @@
     bottom: 0;
 }
 
-
-
-.logo {
-    cursor: pointer;
-}
-
 .py-100 {
     padding: 100px 0;
 }
 
 header{
-    position: sticky;
     z-index: 9999;
     top: 0;
 }
@@ -217,20 +210,11 @@ header{
     transition: var(--transition);
 }
 
-/* .social-anchor{
-    width: 100px;
-    height: 100px;
-    border: 2px solid red;
-    padding: ;
-} */
-
 .social-icon {
     width: 35px;
     height: 35px;
     border: 2px solid var(--border-hover-light);
     font-size: 20px;
-    text-align: center;
-    border-radius: 50%;
     color: var(--border-hover-light);
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
@@ -240,8 +224,6 @@ header{
 .social-icon:hover {
     background-color: var(--border-hover-light);
     color: var(--white);
-    /* transform: scaleX(1.1);
-    transform: scaleY(1.1); */
 }
 
 /************************ Hero Section-1 End ************************/
@@ -333,10 +315,6 @@ header{
 .xp-counter .styled-text {
     font-size: 50px;
     padding: 20px 0;
-}
-
-.about-us {
-    overflow: hidden;
 }
 
 .dot i {
@@ -768,18 +746,12 @@ header{
     -o-transition: all 0.3s linear !important;
     transition: all 0.3s linear !important;
     opacity: 1;
-    /* transition-duration: 0.3s !important; */
 }
 
 .send-button:hover {
     background-color: var(--border-hover-light);
     color: var(--color-light-white);
 }
-
-
-/* .my-contect {
-    padding-top: 200px;
-} */
 
 .contect-me {
     padding-left: 50px;

@@ -95,6 +95,11 @@
     .contact-all-media h5{
         font-size: 16px;
     }
+
+    
+.about-name{
+    font-size: 30px !important;
+}
     
 }
 @media (max-width : 420px) {
