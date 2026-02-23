@@ -2,7 +2,6 @@
 let yourtext = [
   ["Developer", "#8750f7"],
   ["Coder", "#8750f7"],
-  ["Designer", "#8750f7"]
   ];
   
   let x = 0;
